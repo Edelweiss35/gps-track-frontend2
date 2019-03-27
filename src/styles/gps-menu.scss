@@ -1,0 +1,67 @@
+body,
+html {
+  .gps-menu {
+    position: absolute;
+    top: 75px;
+    left: 15px;
+    min-width: 300px;
+
+    .title {
+      margin: 4px 0 2px;
+      height: 40px;
+      background: #409eff;
+      border-radius: 3px;
+      p {
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        height: 40px;
+      }
+      .name {
+        max-width: 260px;
+      }
+      .ctrl {
+        float: right;
+        padding-right: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      .el-dropdown {
+        float: right;
+      }
+    }
+
+    .menu-tree {
+      position: relative;
+      display: inline-block !important;
+    }
+    .el-tree {
+      padding: 0 10px;
+      min-width: 300px;
+      // .el-tree-node__expand-icon {
+      //     display: none;
+      // }
+    }
+    .tree_icon {
+      margin-right: 5px;
+    }
+    .dev_zx {
+      color: #009cf9;
+    }
+    .dev_lx {
+      color: #009cf9;
+    }
+    .dev_wjh {
+      color: #009cf9;
+    }
+    .el-button-group {
+      vertical-align: baseline;
+    }
+  }
+
+  .el-cascader .el-input.is-disabled .el-input__inner {
+    color: #fff;
+    background-color: #a0cfff;
+    border-color: #a0cfff;
+  }
+}

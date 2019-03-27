@@ -1,0 +1,359 @@
+body,
+html {
+
+    .gps-map {
+        width: 100%;
+        height: 100%;
+        .amap-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .switch-map {
+        position: absolute;
+        top: 15px;
+        left: 500px;
+    }
+
+    .gps-map {
+        .amp-btns {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            overflow: hidden;
+            width: 40px;
+            button {
+                border: none;
+                outline: none;
+                background: none;
+                list-style: none;
+                color: #999999;
+                font-size: 30px;
+                float: left;
+                width: 40px;
+                text-align: center;
+            }
+        }
+
+        .amap-info-content {
+            position: relative;
+            .amap-winfos {
+                margin: 3px 6px;
+                .winfos-close {
+                    position: absolute;
+                    top: 4px;
+                    right: 5px;
+                    color: #009cf9;
+                    &:hover {
+                        color: #666666;
+                    }
+                }
+
+            }
+
+        }
+        .amap-info-close {
+            //          display: none;
+        }
+        .amap-marker-label
+        {
+            position: relative;
+            top: -52px !important;
+            left: -93px !important;
+            right: 0 !important;
+            width: 200px;
+            border: 0;
+            background: none;
+            line-height: 26px;
+            .lab-cont {
+                width: 100%;
+                text-align: center;
+                span {
+                    border: 1px #FFFFFF solid;
+                    background-color: #009CF9;
+                    padding: 0px 10px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    display: inline-block;
+                }
+            }
+        }
+        .baidumap {
+            width: 100%;
+            height: 100%;
+            .BMapLabel{
+                border: none !important;
+                width: 200px;
+                background-color:rgba(0,0,0,0) !important;
+                line-height: 26px !important;
+                .lab-cont {
+                    width: 100%;
+                    text-align: center;
+                    span {
+                        border: 1px #FFFFFF solid;
+                        background-color: #009CF9;
+                        padding: 5px 10px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .google-wrapper {
+            width: 100%;
+            height: 100%;
+            .gmnoprint{
+                display: none;
+            }
+            .google-label {
+                width: 200px;
+                line-height: 26px;
+                text-align: center;
+                .lab-cont {
+                    width: 100%;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        padding:0 10px;
+                        border: 1px #FFFFFF solid;
+                        background-color: #009CF9;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+    }
+    ////////////////////////
+    #popup ul{
+  list-style-type:none;
+  -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+#popup ul li {
+  line-height:18px;
+  white-space:nowrap;
+}
+#popup .bubble-mode {
+  float: right;
+}
+
+    #popup .bubble-mode {
+      float: right;
+    }
+    /** 电量  begin 2017-03-29**/
+.battery {
+    color: #34495e;
+    border: 1px solid currentColor;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    position: relative;
+    border-radius: 2px;
+    margin: 0px;
+    transition: color 500ms;
+}
+.battery::before,
+.battery::after {
+    content: "";
+    position: absolute;
+}
+.battery::before {
+    top: 2px;
+    bottom: 2px;
+    right: -3px;
+    width: 1px;
+    display: border-box;
+    border: 1px solid currentColor;
+    border-left: 0;
+}
+.battery::after {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 1px;
+    border-radius: 1px;
+    background-color: currentColor;
+    transition: right 500ms;
+}
+.battery.low {
+    color: #c0392b;
+}
+.battery.low::after {
+    right: 80%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.battery.med {
+    color: #f39c12;
+}
+.battery.med::after {
+    right: 40%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.battery.full {
+    color: #27ae60;
+}
+.battery[data-charge='none']{
+	display: none !important;
+}
+.battery[data-charge='0'],
+.battery[data-charge='1'],
+.battery[data-charge='2']{
+    color: #c0392b;
+}
+.battery[data-charge='3'],
+.battery[data-charge='4'] {
+    color: #f39c12;
+}
+.battery[data-charge='5'],
+.battery[data-charge='6'],
+.battery[data-charge='9'] {
+    color: #27ae60;
+}
+.battery[data-charge='0']::after {
+    right: 100%;
+}
+.battery[data-charge='1']::after {
+    right: 83%;
+}
+.battery[data-charge='2']::after {
+    right: 67%;
+}
+.battery[data-charge='3']::after {
+    right: 50%;
+}
+.battery[data-charge='4']::after {
+    right: 33%;
+}
+.battery[data-charge='5']::after {
+    right: 17%;
+}
+.battery[data-charge='6']::after {
+    right: 0%;
+}
+/** 电量  end 2017-03-29**/
+.el-badge {
+      vertical-align: baseline;
+}
+
+.el-input__prefix, .el-input__suffix{
+	   color: #fff;
+}
+.gps-menu .el-cascader{
+	       float: right;
+			    right: 1px;
+					line-height: 32px;
+          width: 110px;
+}
+.el-input__icon{
+  line-height: 32px;
+}
+.el-collapse-item__header{
+      background-color: #409eff;
+      color:#fff;
+      height: 39px;
+      line-height: 39px;
+      border-radius: 4px 4px 0px 0px;
+}
+.el-collapse-item__arrow{
+    line-height: 39px;
+}
+.el-collapse{
+  border-top: 0px solid #e6ebf5;
+
+}
+}
+.icon {
+   width: 1.5em; height: 1.5em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+
+@media screen and (max-width: 1366px) {
+    #gps-tools .el-button--medium {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+    #gps-tools .el-dropdown {
+        font-size: 10px;
+    }
+    .site-logo {
+        width: 300px !important;
+    }
+    .gps-menu {
+        min-width: 200px !important;
+    }
+    .gps-menu .el-tree {
+        min-width: 200px !important;
+        font-size: 10px;
+        height: 300px !important;
+    }
+    .el-dialog {
+        width: 55% !important;
+    }
+    .el-dialog label,
+    .el-dialog span,
+    .el-dialog input,
+    .el-dialog button {
+        font-size: 10px;
+    }
+    .el-dialog__title {
+        font-size: 14px !important;
+    }
+    #measure-dlg {
+        width: 65% !important;
+    }
+    #measure-dlg .statistics-title {
+        font-size: 15px;
+    }
+    #measure-dlg .chart-title {
+        font-size: 12px;
+    }
+    #measure-dlg .info-element {
+        font-size: 11px;
+    }
+    #report-dlg {
+        width: 500px;
+        max-height: 400px !important;
+    }
+    #report-dlg .report-item {
+        height: 65px;
+    }
+    #report-dlg .device-name {
+        font-size: 12px;
+        height: 12px;
+    }
+    #report-dlg .state-icon {
+        height: 40px;
+        margin: 0 3px !important;
+    }
+    #report-dlg .temper {
+        height: 55px;
+        width: 55px;
+        margin: 0 4px !important;
+        padding: 10px 0 !important;
+    }
+    #report-dlg .temperature {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #report-dlg .report-setting {
+        top: 22px;
+        font-size: 20px;
+    }
+    #report-dlg .report-item .el-dialog {
+        width: 1270px !important;
+    }
+    .edit-form .el-date-editor.el-input {
+        width: auto !important;
+    }
+}

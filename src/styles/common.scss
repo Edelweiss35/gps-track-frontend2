@@ -1,0 +1,106 @@
+@import './variables.scss';
+.red {
+  color: $red
+}
+.green {
+  color:$green
+}
+.green-light {
+  color:#00ff00
+}
+.gray {
+  color:$gray
+}
+.gray-light {
+  color:#C0C4CC
+}
+.blue {
+  color:$blue
+}
+.yellow {
+  color:$yellow
+}
+body,
+html {
+    font: 14px/1.5 "Microsoft Yahei", arial, "Hiragino Sans GB", sans-serif !important;
+    background: #ffffff;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    li,
+    p,
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:focus {
+        outline: none !important;
+    }
+    .hide{//全局隐藏
+        display: none !important;
+    }
+    .show{
+        display: inline !important;
+    }
+    .fl_r{
+        float: right;
+    }
+    .fl_l{
+        float: left;
+    }
+    .var_mind{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+}
+
+*,
+:after,
+:before{
+    box-sizing: border-box;
+}
+
+body{
+    .el-form-item__label[for='name']{
+        &:before{
+            content: "" !important;
+        }
+    }
+    .el-form-item__label[for='password']{
+        &:before{
+            content: "" !important;
+        }
+    }
+    .no-required-icon{
+        &:before{
+            content: "    ";
+        }
+    }
+    .el-dialog__footer{
+        overflow: hidden;
+    }
+    .el_regiter_a{
+        line-height: 36px;
+        text-decoration: underline;
+        color: #20a0ff;
+        cursor: pointer;
+    }
+    // .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+    //     background-color: #009cf9;
+    //     color: #ffffff;
+    //     border-radius: 5px;
+    //     padding: 0 0px !important;
+    // }
+    .footer-copyright {
+    		width: auto;
+        position: fixed;
+        bottom: 0;
+        right: 20px;
+    }
+}
